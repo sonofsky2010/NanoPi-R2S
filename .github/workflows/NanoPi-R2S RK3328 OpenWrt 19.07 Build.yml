@@ -9,7 +9,7 @@ jobs:
 
   build:
 
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
 
     steps:
 
@@ -163,6 +163,7 @@ jobs:
       - name: Custom Configure Files
         run: |
           rm -f code/friendlywrt/.config*
+          cp -f modules.mk code/friendlywrt/target/linux/rockchip-rk3328/
           cp r2s-rk3328-config code/configs/config_rk3328
 
       - name: Set Default Values
