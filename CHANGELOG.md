@@ -109,3 +109,5 @@
 * 添加 frpc 和 npc
 * 支持 Full Cone NAT
 
+## 20211010
+* 增加lima
