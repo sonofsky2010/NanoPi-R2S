@@ -161,6 +161,7 @@ jobs:
         run: |
           rm -f code/friendlywrt/.config*
           cp -f nanopi-r2_linux_defconfig code/kernel/arch/arm64/configs/nanopi-r2_linux_defconfig
+          cp -f runc_Makefile code/friendlywrt/feeds/packages/utils/runc/Makefile
           cp r2s-rk3328-config code/configs/config_rk3328
 
       - name: Set Default Values
