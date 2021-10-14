@@ -178,7 +178,7 @@ jobs:
       - name: Build OpenWrt
         run: |
           cd code
-          go env -w "GO111MODULE=NO"
+          go env -w "GO111MODULE=off"
           sed -i 's/set -eu/set -u/' scripts/mk-friendlywrt.sh
           ./build.sh nanopi_r2s.mk
 
